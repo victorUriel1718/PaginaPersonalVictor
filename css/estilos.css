@@ -1,5 +1,6 @@
 body{
     font-family: Krub,sans-serif;
+    background: linear-gradient(90deg, rgba(38,34,34,1) 0%, rgba(15,14,14,1) 23%, rgba(0,0,0,0.8541666666666666) 56%, rgba(78,73,73,1) 87%);
 }
 
 .navbar{
@@ -34,8 +35,6 @@ body{
 }
 
 .Inicio{
-    background: rgb(38,34,34);
-    background: linear-gradient(90deg, rgba(38,34,34,1) 0%, rgba(15,14,14,1) 23%, rgba(0,0,0,0.8541666666666666) 56%, rgba(78,73,73,1) 87%);
     text-align: center;
     color: white;
 }
@@ -74,21 +73,12 @@ body{
     margin: 2rem 0rem 3rem 0rem;
 }
 
-.Inicio hr{
-    color: white; /* Cambia el color de la línea a azul */
-    background-color: white; /* Cambia el color del fondo (por si acaso) */
-    height: 5px;
-    width: 70rem;
-    margin: 0rem 25rem 2rem  25rem;
-}
-
 
 #segundoSector{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
     gap: 2rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
 }
 
 .card {
@@ -108,4 +98,10 @@ body{
     margin-top: 1rem;
     width: 10rem;
     height: auto;
+}
+
+@media (min-width: 968px) {
+    #segundoSector{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
