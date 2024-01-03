@@ -1,0 +1,111 @@
+body{
+    font-family: Krub,sans-serif;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega sombra si es necesario */
+    z-index: 1000;
+    background-color: rgb(68, 66, 66);
+}
+
+.navbar img{
+    width: 5rem;
+    height: auto;
+    border-radius: 1em;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.navbar a{
+    color: white;
+}
+
+#navbarNav{
+    text-align: center;
+}
+
+.collapse {
+    flex-direction: row-reverse;
+}
+
+.Inicio{
+    background: rgb(38,34,34);
+    background: linear-gradient(90deg, rgba(38,34,34,1) 0%, rgba(15,14,14,1) 23%, rgba(0,0,0,0.8541666666666666) 56%, rgba(78,73,73,1) 87%);
+    text-align: center;
+    color: white;
+}
+
+#Habilidades{
+    background: rgb(38,34,34);
+    background: linear-gradient(90deg, rgba(38,34,34,1) 0%, rgba(15,14,14,1) 23%, rgba(0,0,0,0.8541666666666666) 56%, rgba(78,73,73,1) 87%);
+    text-align: center;
+    color: white;
+}
+
+
+.imgInicio {
+    overflow: hidden;
+    margin-top: 9rem;
+    width: 10rem;
+    transition: transform 0.3s ease-in-out; /* Agrega una transición suave de 0.3 segundos */
+    border-radius: 3em;
+}
+
+.imgInicio:hover {
+    transform: scale(1.3);
+}
+
+.Inicio h1{
+    margin-top: 2rem;
+}
+
+.Inicio p{
+    text-align: justify;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.Inicio a{
+    margin: 2rem 0rem 3rem 0rem;
+}
+
+.Inicio hr{
+    color: white; /* Cambia el color de la línea a azul */
+    background-color: white; /* Cambia el color del fondo (por si acaso) */
+    height: 5px;
+    width: 70rem;
+    margin: 0rem 25rem 2rem  25rem;
+}
+
+
+#segundoSector{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra en el eje transversal (vertical) */
+    justify-content: center; /* Centra en el eje principal (horizontal) */
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.3);
+}
+
+.card-img-top{
+    margin-top: 1rem;
+    width: 10rem;
+    height: auto;
+}
