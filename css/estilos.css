@@ -76,7 +76,7 @@ body{
 
 #segundoSector{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     place-items: center;
     gap: 2rem;
 }
@@ -106,7 +106,13 @@ body{
     }
 }
 
-@media (min-width: 968px) {
+@media (min-width: 720px) {
+    #segundoSector{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 980px) {
     #segundoSector{
         grid-template-columns: repeat(3, 1fr);
     }
