@@ -153,6 +153,7 @@ body{
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0rem 0rem 2rem 0rem;
 }
 
 .certificado img {
@@ -191,7 +192,7 @@ body{
 @media (min-width: 720px) {
     #segundoSector{
         grid-template-columns: repeat(2, 1fr);
-        
+        place-items: center;
     }
     .certificado{
         width: 30rem;
@@ -201,6 +202,7 @@ body{
 @media (min-width: 980px) {
     #segundoSector{
         grid-template-columns: repeat(3, 1fr);
+        place-items: center;
     }
     .certificado{
         width: 50rem;
