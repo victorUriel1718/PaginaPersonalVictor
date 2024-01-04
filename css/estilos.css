@@ -100,6 +100,12 @@ body{
     height: auto;
 }
 
+@media (min-width: 468px) {
+    #segundoSector{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 @media (min-width: 968px) {
     #segundoSector{
         grid-template-columns: repeat(3, 1fr);
