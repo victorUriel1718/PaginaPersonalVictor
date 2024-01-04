@@ -141,13 +141,6 @@ body{
 }
 
 
-#tercerSector {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    place-items: center;
-    margin: 0rem 0rem 2rem 0rem;
-}
-
 .certificado {
     background-color: #fff;
     padding: 20px;
@@ -175,11 +168,86 @@ body{
     text-align: center;
 }
 
+#tercerSector {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 2rem;
+    margin: 0rem 0rem 3rem 0rem;
+    opacity: 0;
+    transform: translateY(20px);
 
+    animation: scaleIn 3s ease-out both;
+}
 
+#html{
+    border: 3px solid orange;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#html:hover {
+    box-shadow: 14px 14px 20px 0 rgba(206, 110, 1, 0.3);
+    transform: translateY(-50px); /* Mueve la tarjeta hacia arriba */
+}
+
+#css{
+    border: 3px solid rgb(27, 158, 219);
+    transition: transform 0.2s ease-in-out, opacity 1s ease-in-out;
+}
+
+#css:hover {
+    box-shadow: 14px 14px 20px 0 rgba(14, 178, 228, 0.3);
+    transform: rotate(20deg); /* Cambia el valor según tu preferencia */
+    opacity: 0.9; /* Cambia el valor según tu preferencia */
+}
+
+#js{
+    border: 3px solid rgb(219, 216, 27);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#js:hover {
+    box-shadow: 14px 14px 20px 0 rgba(235, 231, 6, 0.3);
+    transform: rotate(-20deg); /* Ajusta el ángulo de rotación según tu preferencia */
+}
+
+#sql{
+    border: 3px solid rgb(8, 235, 159);
+    transition: transform 0.3s ease-in-out;
+}
+
+#sql:hover {
+    box-shadow: 14px 14px 20px 0 rgba(3, 224, 51, 0.3);
+    transform: rotate(360deg) scale(1.2); /* Ajusta los valores según tu preferencia */
+}
+
+#git{
+    border: 3px solid rgb(9, 10, 10);
+}
+
+#git:hover {
+    box-shadow: 14px 14px 20px 0 rgba(15, 15, 15, 0.3);
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
+
+#bootstrap{
+    border: 3px solid rgb(85, 11, 128);
+}
+
+#bootstrap:hover {
+    box-shadow: 14px 14px 20px 0 rgba(93, 4, 134, 0.3);
+}
 
 @media (min-width: 468px) {
     #segundoSector{
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+
+    #tercerSector{
         grid-template-columns: repeat(1, 1fr);
         place-items: center;
     }
@@ -194,6 +262,12 @@ body{
         grid-template-columns: repeat(2, 1fr);
         place-items: center;
     }
+
+    #tercerSector{
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    }
+
     .certificado{
         width: 30rem;
     }
@@ -204,6 +278,12 @@ body{
         grid-template-columns: repeat(3, 1fr);
         place-items: center;
     }
+    
+    #tercerSector{
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+    }
+
     .certificado{
         width: 50rem;
     }
