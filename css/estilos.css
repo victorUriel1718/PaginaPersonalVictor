@@ -255,6 +255,31 @@ body{
     box-shadow: 14px 14px 20px 0 rgba(93, 4, 134, 0.3);
 }
 
+@media (min-width: 350px) {
+
+    .navbar a{
+        font-size: 1rem;
+    }
+
+    .navbar img{
+        width: 2rem;
+    }
+
+    #segundoSector{
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+
+    #tercerSector{
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+    
+    .certificado{
+        width: 20rem;
+    }
+}
+
 @media (min-width: 468px) {
     #segundoSector{
         grid-template-columns: repeat(1, 1fr);
