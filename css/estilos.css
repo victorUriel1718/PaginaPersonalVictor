@@ -14,16 +14,12 @@ body{
     background-color: rgb(68, 66, 66);
 }
 
-.navbar img{
-    width: 5rem;
-    height: auto;
-    border-radius: 1em;
-    margin-right: 1rem;
-    margin-left: 1rem;
+.navbar a{
+    font-size: 1rem;
 }
 
-.navbar a{
-    color: white;
+.navbar img{
+    width: 2rem;
 }
 
 #navbarNav{
@@ -256,14 +252,19 @@ body{
 }
 
 @media (min-width: 468px) {
-    .navbar a{
-        font-size: 1rem;
-    }
-
+    
     .navbar img{
-        width: 2rem;
+        width: 5rem;
+        height: auto;
+        border-radius: 1em;
+        margin-right: 1rem;
+        margin-left: 1rem;
     }
     
+    .navbar a{
+        color: white;
+    }
+
     #segundoSector{
         grid-template-columns: repeat(1, 1fr);
         place-items: center;
@@ -280,6 +281,19 @@ body{
 }
 
 @media (min-width: 720px) {
+
+    .navbar img{
+        width: 5rem;
+        height: auto;
+        border-radius: 1em;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    
+    .navbar a{
+        color: white;
+    }
+
     #segundoSector{
         grid-template-columns: repeat(2, 1fr);
         place-items: center;
@@ -296,6 +310,19 @@ body{
 }
 
 @media (min-width: 980px) {
+
+    .navbar img{
+        width: 5rem;
+        height: auto;
+        border-radius: 1em;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    
+    .navbar a{
+        color: white;
+    }
+
     #segundoSector{
         grid-template-columns: repeat(3, 1fr);
         place-items: center;
