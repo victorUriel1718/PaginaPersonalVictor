@@ -141,7 +141,30 @@ body{
     animation: scaleIn 3s ease-out both;
 }
 
+#quintoSector {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* La segunda columna tiene el doble de ancho que la primera */
+    gap: 20px; /* Espacio entre las columnas, puedes ajustarlo según tus preferencias */
+}
 
+/* Estilos adicionales para claridad visual */
+#quintoSector .columna1 {
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+#quintoSector .columna2 {
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.columna1 p{
+    text-align: center;
+}
+
+.columna2 input, textarea, button{
+    margin: 2rem 0rem 0rem 0rem;
+}
 
 .card {
     display: flex;
@@ -250,6 +273,11 @@ body{
 
 #bootstrap:hover {
     box-shadow: 14px 14px 20px 0 rgba(93, 4, 134, 0.3);
+}
+
+.imgFormulario{
+    width: 2rem;
+    margin-right: 1rem;
 }
 
 @media (min-width: 468px) {
